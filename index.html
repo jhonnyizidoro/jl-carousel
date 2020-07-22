@@ -1,0 +1,28 @@
+<html lang="pt-br">
+<head>
+	<title>JS Carousel Example</title>
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="js-carousel.css">
+	<script src="functions.js"></script>
+	<script src="jl-carousel.js"></script>
+</head>
+<body>
+<div class="carousel">
+	<div class="carousel__slides">
+		<img class="carousel__slide" src="images/argentina.png" alt="Bandeira">
+		<img class="carousel__slide" src="images/brasil.png" alt="Bandeira">
+		<img class="carousel__slide" src="images/inglaterra.png" alt="Bandeira">
+		<img class="carousel__slide" src="images/peru.png" alt="Bandeira">
+	</div>
+</div>
+<button class="carousel__control carousel__control__left">LEFT</button>
+<button class="carousel__control carousel__control__right">RIGHT</button>
+<script>
+	document.addEventListener('DOMContentLoaded', () => {
+		initCarousel('.carousel', {
+			perView: 6,
+		})
+	})
+</script>
+</body>
+</html>
