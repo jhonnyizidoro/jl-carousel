@@ -1,0 +1,8 @@
+.carousel__slides {
+	display: flex;
+	overflow: hidden;
+}
+
+.carousel__slide {
+	flex-shrink: 0;
+}
