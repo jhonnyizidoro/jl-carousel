@@ -9,19 +9,17 @@
 <body>
 <div class="carousel">
 	<div class="carousel__slides">
-		<img class="carousel__slide" src="images/argentina.png" alt="Bandeira">
-		<img class="carousel__slide" src="images/brasil.png" alt="Bandeira">
-		<img class="carousel__slide" src="images/inglaterra.png" alt="Bandeira">
-		<img class="carousel__slide" src="images/peru.png" alt="Bandeira">
+		<img draggable="false" class="carousel__slide" src="images/argentina.png" alt="Bandeira">
+		<img draggable="false" class="carousel__slide" src="images/brasil.png" alt="Bandeira">
+		<img draggable="false" class="carousel__slide" src="images/inglaterra.png" alt="Bandeira">
+		<img draggable="false" class="carousel__slide" src="images/peru.png" alt="Bandeira">
 	</div>
-	<button class="carousel__control carousel__control__left">LEFT</button>
-	<button class="carousel__control carousel__control__right">RIGHT</button>
+	<div class="carousel__control carousel__control__left"></div>
+	<div class="carousel__control carousel__control__right"></div>
 </div>
 <script>
-	document.addEventListener('DOMContentLoaded', () => {
-		initCarousel('.carousel', {
-			perView: 6,
-		})
+	window.addEventListener('load', () => {
+		initCarousel('.carousel', { perView: 2 })
 	})
 </script>
 </body>
